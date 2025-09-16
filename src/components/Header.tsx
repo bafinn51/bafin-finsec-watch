@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Shield, AlertTriangle } from "lucide-react";
+import { Shield } from "lucide-react";
 
 export const Header = () => {
   return (
@@ -12,12 +12,6 @@ export const Header = () => {
         <p className="text-primary-foreground/90 text-sm">
           Bundesanstalt für Finanzdienstleistungsaufsicht – Administrative Orders Management
         </p>
-        <div className="flex items-center gap-2 mt-3">
-          <Badge variant="warning" className="bg-warning/20 text-warning-foreground border-warning/30">
-            <AlertTriangle className="h-3 w-3 mr-1" />
-            Demo System
-          </Badge>
-        </div>
       </div>
     </header>
   );

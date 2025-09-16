@@ -31,6 +31,9 @@ export const OrderDetails = () => {
               </Badge>
             </div>
             <p className="text-muted-foreground">{order.division}</p>
+            <div className="mt-2 text-sm text-muted-foreground">
+              <p><strong>Legal Authority:</strong> German Money Laundering Act (GwG) § 51, Payment Services Supervision Act (ZAG) § 4(1), EU Regulation No. 269/2014</p>
+            </div>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="grid md:grid-cols-3 gap-6">
@@ -85,8 +88,19 @@ export const OrderDetails = () => {
             <div className="space-y-2 text-sm">
               <p><strong>BaFin – Bundesanstalt für Finanzdienstleistungsaufsicht</strong></p>
               <p>Graurheindorfer Straße 108, 53117 Bonn, Germany</p>
-              <p className="text-warning font-semibold mt-4">
-                ⚠ Demo System – This page is a fictitious illustration and has no official value.
+              <p className="mt-4">
+                <strong>Phone:</strong> +49 (0)228 4108-0
+              </p>
+              <p>
+                <strong>Email:</strong> poststelle@bafin.de
+              </p>
+              <p>
+                <strong>Website:</strong> www.bafin.de
+              </p>
+              <p className="mt-4 text-xs text-muted-foreground">
+                This administrative order is issued under the authority of the German Banking Act (KWG), 
+                the Money Laundering Act (GwG), and relevant EU regulations. 
+                All affected parties have the right to appeal this decision within 30 days of notification.
               </p>
             </div>
           </CardContent>
