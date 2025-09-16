@@ -1,11 +1,10 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TransactionCard } from "@/components/TransactionCard";
 import { LegalBasisSection } from "@/components/LegalBasisSection";
-import { mockAdministrativeOrders } from "@/data/mock-data";
-import { ArrowLeft, Calendar, Building2, FileText, Euro } from "lucide-react";
+import { Header } from "@/components/Header";
+import { mockAdministrativeOrder } from "@/data/mock-data";
+import { Calendar, Building2, FileText, Euro } from "lucide-react";
 
 const statusColors = {
   active: "blocked" as const,
@@ -14,36 +13,12 @@ const statusColors = {
 };
 
 export const OrderDetails = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  
-  const order = mockAdministrativeOrders.find(o => o.id === id);
-  
-  if (!order) {
-    return (
-      <div className="min-h-screen bg-background p-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center py-12">
-            <h1 className="text-2xl font-bold text-foreground mb-4">Order Not Found</h1>
-            <Button onClick={() => navigate('/')}>
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Dashboard
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  const order = mockAdministrativeOrder;
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       <div className="max-w-7xl mx-auto p-6 space-y-6">
-        <div className="flex items-center gap-4">
-          <Button variant="outline" onClick={() => navigate('/')}>
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Dashboard
-          </Button>
-        </div>
 
         <Card className="shadow-elevated">
           <CardHeader>
