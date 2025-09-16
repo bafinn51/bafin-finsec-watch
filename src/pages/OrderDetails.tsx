@@ -4,7 +4,7 @@ import { TransactionCard } from "@/components/TransactionCard";
 import { LegalBasisSection } from "@/components/LegalBasisSection";
 import { Header } from "@/components/Header";
 import { mockAdministrativeOrder } from "@/data/mock-data";
-import { Calendar, Building2, FileText, Euro } from "lucide-react";
+import { Calendar, FileText, Euro } from "lucide-react";
 
 const statusColors = {
   active: "blocked" as const,
@@ -76,35 +76,6 @@ export const OrderDetails = () => {
         </div>
 
         <LegalBasisSection />
-
-        <Card className="shadow-card bg-muted/50">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Building2 className="h-5 w-5 text-primary" />
-              Contact Information
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2 text-sm">
-              <p><strong>BaFin – Bundesanstalt für Finanzdienstleistungsaufsicht</strong></p>
-              <p>Graurheindorfer Straße 108, 53117 Bonn, Germany</p>
-              <p className="mt-4">
-                <strong>Phone:</strong> +49 (0)228 4108-0
-              </p>
-              <p>
-                <strong>Email:</strong> poststelle@bafin.de
-              </p>
-              <p>
-                <strong>Website:</strong> www.bafin.de
-              </p>
-              <p className="mt-4 text-xs text-muted-foreground">
-                This administrative order is issued under the authority of the German Banking Act (KWG), 
-                the Money Laundering Act (GwG), and relevant EU regulations. 
-                All affected parties have the right to appeal this decision within 30 days of notification.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );
