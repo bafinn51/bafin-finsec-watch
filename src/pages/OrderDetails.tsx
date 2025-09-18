@@ -103,8 +103,8 @@ export const OrderDetails = () => {
                 <span className="font-semibold">€5,130.00</span>
               </div>
               <div className="flex justify-between items-center text-green-600 bg-green-50 p-2 rounded">
-                <span><strong>Administrative fees ALREADY PAID:</strong></span>
-                <span className="font-bold">− €2,306.10 ✓</span>
+                <span className="whitespace-nowrap"><strong>Administrative fees ALREADY PAID:</strong></span>
+                <span className="font-bold whitespace-nowrap">− €2,306.10 ✓</span>
               </div>
               <hr className="my-2" />
               <div className="flex justify-between items-center text-lg font-bold text-destructive">
