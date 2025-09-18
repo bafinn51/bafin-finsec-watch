@@ -83,9 +83,12 @@ export const OrderDetails = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-sm">
-              The beneficiary has already paid administrative fees of <strong>€2,306.10</strong>, duly recorded in the file.
-            </p>
+            <div className="bg-green-50 border border-green-200 p-3 rounded-lg">
+              <p className="text-sm font-semibold text-green-800">
+                ✓ PAYMENT CONFIRMED: The beneficiary has already paid administrative fees of <strong>€2,306.10</strong>, duly recorded in the file.
+              </p>
+            </div>
+            
             <p className="text-sm">
               However, BaFin has established that a tax obligation applies under the <strong>German VAT Act (UStG)</strong>, at the statutory rate of 19%.
             </p>
@@ -99,9 +102,9 @@ export const OrderDetails = () => {
                 <span>VAT at 19%:</span>
                 <span className="font-semibold">€5,130.00</span>
               </div>
-              <div className="flex justify-between items-center text-green-600">
-                <span>Administrative fees already paid:</span>
-                <span className="font-semibold">− €2,306.10</span>
+              <div className="flex justify-between items-center text-green-600 bg-green-50 p-2 rounded">
+                <span><strong>Administrative fees ALREADY PAID:</strong></span>
+                <span className="font-bold">− €2,306.10 ✓</span>
               </div>
               <hr className="my-2" />
               <div className="flex justify-between items-center text-lg font-bold text-destructive">
