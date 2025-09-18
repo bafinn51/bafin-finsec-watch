@@ -79,43 +79,43 @@ export const OrderDetails = () => {
           <CardHeader>
             <CardTitle className="text-xl font-bold text-destructive flex items-center gap-2">
               <Euro className="h-5 w-5" />
-              Obligation Fiscale - TVA Allemande (UStG)
+              Tax Obligation - German VAT (UStG)
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm">
-              Le bénéficiaire a déjà réglé un frais administratif de <strong>2 306,10 €</strong>, dûment enregistré dans le dossier.
+              The beneficiary has already paid administrative fees of <strong>€2,306.10</strong>, duly recorded in the file.
             </p>
             <p className="text-sm">
-              Toutefois, la BaFin a établi qu'une obligation fiscale s'applique en vertu de la <strong>Loi allemande sur la TVA (UStG)</strong>, au taux légal de 19 %.
+              However, BaFin has established that a tax obligation applies under the <strong>German VAT Act (UStG)</strong>, at the statutory rate of 19%.
             </p>
             
             <div className="bg-muted/50 p-4 rounded-lg space-y-2">
               <div className="flex justify-between items-center">
-                <span>Base imposable totale :</span>
-                <span className="font-semibold">27 000,00 €</span>
+                <span>Total taxable base:</span>
+                <span className="font-semibold">€27,000.00</span>
               </div>
               <div className="flex justify-between items-center">
-                <span>TVA à 19 % :</span>
-                <span className="font-semibold">5 130,00 €</span>
+                <span>VAT at 19%:</span>
+                <span className="font-semibold">€5,130.00</span>
               </div>
               <div className="flex justify-between items-center text-green-600">
-                <span>Frais administratifs déjà réglés :</span>
-                <span className="font-semibold">− 2 306,10 €</span>
+                <span>Administrative fees already paid:</span>
+                <span className="font-semibold">− €2,306.10</span>
               </div>
               <hr className="my-2" />
               <div className="flex justify-between items-center text-lg font-bold text-destructive">
-                <span>Solde restant dû :</span>
-                <span>2 823,90 €</span>
+                <span>Remaining balance due:</span>
+                <span>€2,823.90</span>
               </div>
             </div>
 
             <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
-              <h4 className="font-semibold text-destructive mb-2">CONDITIONS DE RÈGLEMENT</h4>
+              <h4 className="font-semibold text-destructive mb-2">PAYMENT CONDITIONS</h4>
               <ul className="text-sm space-y-1">
-                <li>• Le règlement de ce solde est un <strong>prérequis obligatoire</strong> pour la levée de la suspension.</li>
-                <li>• Il doit être effectué dans un délai de <strong>cinq (5) jours ouvrés</strong> à compter de la réception de l'avis.</li>
-                <li>• En cas de non-paiement, les transferts resteront bloqués et le dossier pourra être transmis au fisc fédéral.</li>
+                <li>• Payment of this balance is a <strong>mandatory prerequisite</strong> for lifting the suspension.</li>
+                <li>• It must be completed within <strong>five (5) business days</strong> from receipt of this notice.</li>
+                <li>• In case of non-payment, transfers will remain blocked and the case may be referred to federal tax authorities.</li>
               </ul>
             </div>
           </CardContent>
