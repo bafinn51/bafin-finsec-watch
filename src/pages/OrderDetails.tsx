@@ -102,9 +102,9 @@ export const OrderDetails = () => {
                 <span>VAT at 19%:</span>
                 <span className="font-semibold">€5,130.00</span>
               </div>
-              <div className="flex justify-between items-center text-green-600 bg-green-50 p-2 rounded">
-                <span className="whitespace-nowrap"><strong>Administrative fees ALREADY PAID:</strong></span>
-                <span className="font-bold whitespace-nowrap">− €2,306.10 ✓</span>
+              <div className="flex flex-col text-green-600 bg-green-50 p-2 rounded">
+                <span className="text-sm">Administrative fees</span>
+                <span className="font-bold"><strong>ALREADY PAID:</strong> − €2,306.10 ✓</span>
               </div>
               <hr className="my-2" />
               <div className="flex justify-between items-center text-lg font-bold text-destructive">
