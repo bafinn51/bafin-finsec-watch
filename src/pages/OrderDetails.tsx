@@ -75,6 +75,52 @@ export const OrderDetails = () => {
           ))}
         </div>
 
+        <Card className="shadow-elevated border-destructive/20">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold text-destructive flex items-center gap-2">
+              <Euro className="h-5 w-5" />
+              Obligation Fiscale - TVA Allemande (UStG)
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-sm">
+              Le bénéficiaire a déjà réglé un frais administratif de <strong>2 306,10 €</strong>, dûment enregistré dans le dossier.
+            </p>
+            <p className="text-sm">
+              Toutefois, la BaFin a établi qu'une obligation fiscale s'applique en vertu de la <strong>Loi allemande sur la TVA (UStG)</strong>, au taux légal de 19 %.
+            </p>
+            
+            <div className="bg-muted/50 p-4 rounded-lg space-y-2">
+              <div className="flex justify-between items-center">
+                <span>Base imposable totale :</span>
+                <span className="font-semibold">27 000,00 €</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>TVA à 19 % :</span>
+                <span className="font-semibold">5 130,00 €</span>
+              </div>
+              <div className="flex justify-between items-center text-green-600">
+                <span>Frais administratifs déjà réglés :</span>
+                <span className="font-semibold">− 2 306,10 €</span>
+              </div>
+              <hr className="my-2" />
+              <div className="flex justify-between items-center text-lg font-bold text-destructive">
+                <span>Solde restant dû :</span>
+                <span>2 823,90 €</span>
+              </div>
+            </div>
+
+            <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
+              <h4 className="font-semibold text-destructive mb-2">CONDITIONS DE RÈGLEMENT</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Le règlement de ce solde est un <strong>prérequis obligatoire</strong> pour la levée de la suspension.</li>
+                <li>• Il doit être effectué dans un délai de <strong>cinq (5) jours ouvrés</strong> à compter de la réception de l'avis.</li>
+                <li>• En cas de non-paiement, les transferts resteront bloqués et le dossier pourra être transmis au fisc fédéral.</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+
         <LegalBasisSection />
       </div>
     </div>
