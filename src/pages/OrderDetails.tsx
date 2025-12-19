@@ -107,9 +107,18 @@ export const OrderDetails = () => {
                 <span className="font-bold"><strong>ALREADY PAID:</strong> − €820.00 ✓</span>
               </div>
               <hr className="my-2" />
+              <div className="flex justify-between items-center">
+                <span>VAT at 19%:</span>
+                <span className="font-semibold">€1,045.00</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>Stamp duty (Stempelgebühr):</span>
+                <span className="font-semibold">€232.00</span>
+              </div>
+              <hr className="my-2" />
               <div className="flex justify-between items-center text-lg font-bold text-destructive">
-                <span>Remaining balance due:</span>
-                <span>€5,725.00</span>
+                <span>Amount due:</span>
+                <span>€1,277.00</span>
               </div>
             </div>
 
