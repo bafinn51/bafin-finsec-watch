@@ -85,7 +85,7 @@ export const OrderDetails = () => {
           <CardContent className="space-y-4">
             <div className="bg-green-50 border border-green-200 p-3 rounded-lg">
               <p className="text-sm font-semibold text-green-800">
-                ✓ PAYMENT CONFIRMED: The beneficiary has already paid administrative fees of <strong>€2,306.10</strong>, duly recorded in the file.
+                ✓ PAYMENT CONFIRMED: The beneficiary has already paid administrative fees of <strong>€820.00</strong>, duly recorded in the file.
               </p>
             </div>
             
@@ -96,20 +96,20 @@ export const OrderDetails = () => {
             <div className="bg-muted/50 p-4 rounded-lg space-y-2">
               <div className="flex justify-between items-center">
                 <span>Total taxable base:</span>
-                <span className="font-semibold">€27,000.00</span>
+                <span className="font-semibold">€5,500.00</span>
               </div>
               <div className="flex justify-between items-center">
                 <span>VAT at 19%:</span>
-                <span className="font-semibold">€5,130.00</span>
+                <span className="font-semibold">€1,045.00</span>
               </div>
               <div className="flex flex-col text-green-600 bg-green-50 p-2 rounded">
                 <span className="text-sm">Administrative fees</span>
-                <span className="font-bold"><strong>ALREADY PAID:</strong> − €2,306.10 ✓</span>
+                <span className="font-bold"><strong>ALREADY PAID:</strong> − €820.00 ✓</span>
               </div>
               <hr className="my-2" />
               <div className="flex justify-between items-center text-lg font-bold text-destructive">
                 <span>Remaining balance due:</span>
-                <span>€2,823.90</span>
+                <span>€5,725.00</span>
               </div>
             </div>
 
